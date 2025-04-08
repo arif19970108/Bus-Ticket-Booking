@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Ticket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ticket">
+    <h2>🎫 Your Bus Ticket</h2>
+    <p><strong>Name:</strong> <span id="tName"></span></p>
+    <p><strong>Age:</strong> <span id="tAge"></span></p>
+    <p><strong>Gender:</strong> <span id="tGender"></span></p>
+    <p><strong>Contact:</strong> <span id="tContact"></span></p>
+    <p><strong>From:</strong> <span id="tFrom"></span></p>
+    <p><strong>To:</strong> <span id="tTo"></span></p>
+    <p><strong>Date:</strong> <span id="tDate"></span></p>
+    <p><strong>Bus Type:</strong> <span id="tBusType"></span></p>
+    <p><strong>Seats:</strong> <span id="tSeats"></span></p>
+    <p><strong>Total Price:</strong> <span id="tTotal"></span> BDT</p>
+    <br />
+    <button onclick="window.print()">🖨️ Print Ticket</button>
+  </div>
+
+  <script>
+    const ticket = JSON.parse(localStorage.getItem('ticketData'));
+    if (ticket) {
+      document.getElementById('tName').innerText = ticket.name;
+      document.getElementById('tAge').innerText = ticket.age;
+      document.getElementById('tGender').innerText = ticket.gender;
+      document.getElementById('tContact').innerText = ticket.contact;
+      document.getElementById('tFrom').innerText = ticket.from;
+      document.getElementById('tTo').innerText = ticket.to;
+      document.getElementById('tDate').innerText = ticket.date;
+      document.getElementById('tBusType').innerText = ticket.busType;
+      document.getElementById('tSeats').innerText = ticket.seatNumbers;
+      document.getElementById('tTotal').innerText = ticket.total;
+    }
+  </script>
+</body>
+</html>

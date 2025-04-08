@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 20px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00e5ff;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #00e5ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #00bcd4;
+  }
+  
+  .theme-toggle {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .seats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .seat {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+  }
+  
+  .seat.selected {
+    background-color: #00e5ff;
+    color: #000;
+  }
+
+input, select, button {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+  
+  /* Light Theme */
+  .light-mode {
+    background-color: #f5f5f5;
+    color: #111;
+  }
+  
+  .light-mode .container {
+    background-color: #fff;
+    color: #111;
+  }
+  
+  .light-mode button {
+    background-color: #007acc;
+    color: #fff;
+  }
+  
+  /* Ticket Page */
+  .ticket {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .ticket h2 {
+    color: #00e5ff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .seats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .seats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Ticket Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚌 Bus Ticket Booking</h1>
+    <label for="from">From:</label>
+    <select id="from">
+      <option>Dhaka</option>
+      <option>Chittagong</option>
+      <option>Khulna</option>
+      <option>Rajshahi</option>
+      <option>Rangpur</option>
+      <option>Barisal</option>
+      <option>Sylhet</option>
+      <option>Mymensingh</option>
+    </select>
+
+    <label for="to">To:</label>
+    <select id="to">
+      <option>Khulna</option>
+      <option>Dhaka</option>
+      <option>Chittagong</option>
+      <option>Rajshahi</option>
+      <option>Rangpur</option>
+      <option>Barisal</option>
+      <option>Sylhet</option>
+      <option>Mymensingh</option>
+    </select>
+
+    <label for="date">Journey Date:</label>
+    <input type="date" id="date" />
+
+    <label for="busType">Bus Type:</label>
+    <select id="busType">
+      <option value="AC">AC - 1200</option>
+      <option value="Non-AC">Non-AC - 800</option>
+      <option value="Sleeper">Sleeper - 1500</option>
+      <option value="Semi-Sleeper">Semi-Sleeper - 1000</option>
+    </select>
+
+    <h3>Select Your Seats:</h3>
+    <div class="seats" id="seats"></div>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age" />
+
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label for="contact">Contact:</label>
+    <input type="text" id="contact" placeholder="Enter contact number" />
+
+    <h3>Total Price: <span id="totalPrice">0</span> BDT</h3>
+
+    <button id="confirmBtn">Confirmation Ticket</button>
+
+    <div class="theme-toggle">
+      <button onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
